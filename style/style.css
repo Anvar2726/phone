@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkgray;
+}
+
+.phone__border{
+    width: 320px;
+    height: 600px;
+    border-radius: 50px;
+    border: 10px solid black;
+    box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+    position: relative;
+    background-image: url("/images/phone-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+.phone__camera{
+    position: absolute;
+    width: 30%;
+    height: 20px;
+    background-color: #030305;
+    top: 7px;
+    right: 35%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+}
+
+.phone__body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone__camera span{
+    padding: 4px;
+    background-color: #2d2e38;
+    border-radius: 50%;
+}
+.vidgets__row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+.vidgets__row div{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.vidgets__row div p{
+    position: absolute;
+    bottom: -18px;
+    color: #fff;
+    font-size: 12px;
+}
+.settings{
+    background-image: url("/images/settings.png");
+    
+}
+.calendar{
+    background-image: url("/images/calendar.png");
+}
+.notes{
+    background-image: url("/images/notes.png");
+}
+.notes p{
+    left: 10px;
+}
+.camera{
+    background-image: url("/images/camera.png");
+}
+.mail{
+    background-image: url("/images/email-icon.png");
+}
+.mail p {
+    left: 12px;
+}
+.clock{
+    background-image: url("/images/clock.png");
+}
+.clock p{
+    left: 8px; 
+}
+.photos{
+    background-image: url("/images/photos.png");
+}
+.photos p{
+    left: 8px; 
+}
+.chrome{
+    background-image: url("/images/chrome.png");
+}
+.alarm{
+    background-image: url("/images/alarm.png");
+}
+.alarm p{
+    left: 8px;
+}
+
+.vidgets__footer{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   padding: 10px;
+   border-radius: 20px;
+   background: rgba(10,10,10,.5);
+   margin-top: auto;
+}
+.vidgets__footer div{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.sms{
+    background-image: url("/images/sms.png");
+}
+.contact{
+    background-image: url("/images/contact.png");
+}
+.safari{
+    background-image: url("/images/safari.png");
+}
+.settings{
+    background-image: url("/images/settings.png");
+}
